@@ -5,35 +5,41 @@ using namespace std;
 int main()
 {
     system("clear");
+    debil:
     char yn;
-    cout << "вы дебил ?(Y , N): ";
+    cout << "вы человек ?(Y , N): ";
     cin >> yn;
     switch(yn)
     {
         case 'n':
         case 'N':
-        cout << "пидора ответ";
+        cout << "марсианина ответ";
         break;
         case 'y':
         case 'Y':
+        debil2:
         char yn2;
-        cout << "вы жрете говно ?(Y , N) : ";
+        cout << "вы жрете чипсы ?(Y , N) : ";
         cin >> yn2;
         switch(yn2)
         {
             case 'y':
             case 'Y':
-            cout << "МОЙ ВЕРДИКТ - ВЫ ПИДОР ГОВНОЖУЙ";
+            cout << "МОЙ ВЕРДИКТ - ВЫ ПЖИРНЫЙ";
             break;
             case 'n':
             case 'N':
-            cout << "Я же знаю что ты жреш говно";
+            cout << "Я же знаю что ты жреш чипсы";
+            break;
+            default:
+            cout << "ты дыже ответ нормально написать не можеш ?\n" << "АНУ БЫСТОР НАПИСАЛ ОТВЕТ НОРМАЛЬНО\n";
+            goto debil2;
             break;
         }
         break;
         default:
-        cout << "ну ты внатуре дебил";
-        break;
+        cout << "ты дыже ответ нормально написать не можеш ?\n" << "АНУ БЫСТОР НАПИСАЛ ОТВЕТ НОРМАЛЬНО\n";
+        goto debil;
     }
     cout << '\n';
 }

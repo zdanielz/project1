@@ -25,7 +25,7 @@ int main()
         {
             case 'y':
             case 'Y':
-            cout << "МОЙ ВЕРДИКТ - ВЫ ПЖИРНЫЙ";
+            cout << "МОЙ ВЕРДИКТ - ВЫ ЖИРНЫЙ";
             break;
             case 'n':
             case 'N':

@@ -1,82 +1,41 @@
 #include <iostream>
 #include <cstdlib>
+#include <stdio.h>
 using namespace std;
+
+// 1 - +
 
 int main()
 {
-    system("clear");
-    debil:
-    char yn;
-    cout << "вы человек ?(Y , N): ";
-    cin >> yn;
-    switch(yn)
+    long double pi = 1.0;
+    int p = -1;
+    for(int i = 1; i < 100000; i ++)
     {
-        case 'n':
-        case 'N':
-        cout << "марсианина ответ";
-        break;
-        case 'y':
-        case 'Y':
-        debil2:
-        char yn2;
-        cout << "вы жрете чипсы ?(Y , N) : ";
-        cin >> yn2;
-        switch(yn2)
+        for(int a = 2; a < i; a++)
         {
-            case 'y':
-            case 'Y':
-            cout << "МОЙ ВЕРДИКТ - ВЫ ЖИРНЫЙ";
-            break;
-            case 'n':
-            case 'N':
-            cout << "Я же знаю что ты жреш чипсы";
-            break;
-            default:
-            cout << "ты дыже ответ нормально написать не можеш ?\n" << "АНУ БЫСТОР НАПИСАЛ ОТВЕТ НОРМАЛЬНО\n";
-            goto debil2;
-            break;
+            if((a % i) != 0) {
+                if(p == 1)
+                {
+                    pi += 1.0/i;
+                }
+
+                if(p == -1)
+                {
+                    pi -= 1.0/i;
+                }
+            }
+            p = -p;
         }
-        break;
-        default:
-        cout << "ты дыже ответ нормально написать не можеш ?\n" << "АНУ БЫСТОР НАПИСАЛ ОТВЕТ НОРМАЛЬНО\n";
-        goto debil;
     }
-    cout << '\n';
+    pi *= 4;
+    cout << fixed;
+    cout.precision(64);
+    cout << pi << endl;
 }
 
 
+//61
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//3.1415726535897953940711102571725632515153847634792327880859375000
+//3.1415726535897953940711102571725632515153847634792327880859375000
 
